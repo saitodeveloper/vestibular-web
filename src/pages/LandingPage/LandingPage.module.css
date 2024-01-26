@@ -1,0 +1,110 @@
+header {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    background: var(--background-color-dark);
+    border: 0 solid var(--background-color-accent);
+    border-width: 0 0 0.12em 0;
+}
+
+header img {
+    height: 3em;
+    padding: 1em;
+}
+
+header nav a {
+    margin-left: 0.5em;
+}
+
+.LandingPageContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.LandingPageContent .Headline {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    background: var(--background-color-dark);
+}
+
+.LandingPageContent .Headline article {
+    width: 40vw;
+}
+
+.LandingPageContent .Headline .OutdoorImg {
+    width: 60vw;
+    height: 100vh;
+    border-radius: 30% 0 0 30%;
+    overflow: hidden;
+}
+
+.LandingPageContent .Headline .OutdoorImg img {
+    height: 100%;
+}
+
+.LandingPageContent .Headline article .Texts {
+    margin: 6rem;
+}
+
+.LandingPageContent .Headline article .Texts h1 {
+    font-size: 3rem;
+    letter-spacing: 0.125rem;
+}
+
+.LandingPageContent .Headline article .Texts h2 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.LandingPageContent .Headline article button {
+    margin-top: 1em;
+}
+
+.LandingPageContent .Features {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.LandingPageContent .Features img {
+    height: 10em;
+    margin: 2em 0 0 0;
+}
+
+.LandingPageContent .Features .FeatureList {
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.LandingPageContent .Features .FeatureList .Feature {
+    max-width: 20%;
+}
+
+.LandingPageContent .Features .FeatureList .Feature article {
+    background-color: var(--background-box-color);
+    text-align: left;
+    border-radius: 2em;
+    padding: 2em;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0.5em;
+    border: 0 solid var(--background-box-shadow-color);
+    border-width: 0 0.3em 0.3em 0;
+}
+
+.LandingPageContent .Features .FeatureList .Feature article h4 {
+    margin: 1em 0;
+    font-weight: 900;
+}
+
+.LandingPageContent .Features .FeatureList .Feature article i {
+    font-size: 4em;
+}
+
+footer {
+    text-align: center;
+    margin: 0.5em;
+}

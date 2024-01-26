@@ -1,0 +1,16 @@
+.LoginPage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.LoginPage .NavHolder {
+    width: 100%;
+    display: flex;
+}
+
+.LoginPage .NavHolder .NavItem {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
