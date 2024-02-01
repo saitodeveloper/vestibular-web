@@ -14,6 +14,8 @@
     --text-color: #fff;
     --text-color-dark: #646464;
 
+    --input-border-color: #e4e4e4;
+
     /** Sizes */
     --font-size: 1rem;
 }
@@ -22,6 +24,22 @@ html,
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0.2em solid var(--input-border-color);
+    padding: 0.5em;
+    outline: none;
+    border-radius: 20em;
 }
 
 h1,

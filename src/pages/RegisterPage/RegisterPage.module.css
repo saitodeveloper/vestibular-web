@@ -1,3 +1,22 @@
-.PageContent {
-    position: relative;
+.RegisterContent fieldset {
+    display: flex;
+    justify-content: left;
+}
+
+.RegisterContent fieldset.FieldsetCollumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.RegisterContent fieldset label {
+    flex: 1;
+}
+
+.RegisterContent fieldset input {
+    flex: 1;
+    margin-left: 0.5em;
+}
+
+.RegisterContent fieldset {
+    margin-top: 0.5em;
 }
