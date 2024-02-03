@@ -33,7 +33,7 @@ function LandingPageComponent() {
                 </section>
                 <section className={styles.Features}>
                     <img src="/img/trophy.svg" />
-                    <h2>Bem-vindo à [Nome da Sua Plataforma]</h2>
+                    <h2>Bem-vindo à Vogarify</h2>
                     <h3>
                         Aqui a sua jornada do ensino médio se transforma em uma
                         trajetória de sucesso no vestibular!

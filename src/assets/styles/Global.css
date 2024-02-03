@@ -77,15 +77,16 @@ a:active {
 @media (prefers-color-scheme: dark) {
     :root {
         /** Colors */
-        --highlight-color: #40358c;
-        --highlight-color-darker: #1d183f;
+        --highlight-color: #FF893B;
+        --highlight-color-darker: #c46729;
 
-        --background-color: #4c4e5f;
+        --background-box-color: #465461;
+        --background-color: #262f38;
         --background-color-accent: #8387a8;
         --background-color-dark: #080b10;
 
-        --text-color: #a6a7ac;
-        --text-color-dark: #a6a7ac;
+        --text-color: #f8f8f8;
+        --text-color-dark: #dfdfdf;
 
         /** Sizes */
         --font-size: 1rem;

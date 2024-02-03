@@ -1,9 +1,13 @@
+.RegisterContent h1 {
+    margin-top: 0.5rem;
+}
+
 .RegisterContent fieldset {
     display: flex;
     justify-content: left;
 }
 
-.RegisterContent fieldset.FieldsetCollumn {
+.RegisterContent fieldset.FieldsetColumn {
     display: flex;
     flex-direction: column;
 }
@@ -18,5 +22,9 @@
 }
 
 .RegisterContent fieldset {
+    margin-top: 0.5em;
+}
+
+.RegisterContent button {
     margin-top: 0.5em;
 }

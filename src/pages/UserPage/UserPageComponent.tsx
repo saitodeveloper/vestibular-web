@@ -3,17 +3,19 @@ import styles from "./UserPage.module.css";
 
 function UserPageComponent() {
     return (
-        <div className={styles.LoginPage}>
-            <nav className={styles.NavHolder}>
-                <Link className={styles.NavItem} to="login">
-                    Logar
-                </Link>
-                <Link className={styles.NavItem} to="register">
-                    Registrar
-                </Link>
-            </nav>
-            <Outlet />
-        </div>
+        <main className={styles.LoginPage}>
+            <form onSubmit={e => e.preventDefault()} className={styles.LoginForm}>
+                <nav className={styles.NavHolder}>
+                    <Link className={styles.NavItem} to="login">
+                        Logar
+                    </Link>
+                    <Link className={styles.NavItem} to="register">
+                        Registrar
+                    </Link>
+                </nav>
+                <Outlet />
+            </form>
+        </main>
     );
 }
 
