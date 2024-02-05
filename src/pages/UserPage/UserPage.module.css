@@ -6,24 +6,31 @@
 
 .LoginPage .LoginForm {
     position: absolute;
-    width: 40%;
+    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2em;
-    border-radius: 1.2em;
+    border-radius: var(--component-border-radius);
     background-color: var(--background-box-color);
     border: 0 solid var(--background-box-shadow-color);
     border-width: 0 0.3em 0.3em 0;
+    overflow: hidden;
 }
 
 .LoginPage .LoginForm .NavHolder {
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .LoginPage .LoginForm .NavHolder .NavItem {
+    padding: 1.2rem;
+    background-color: var(--background-color-contrast);
     text-decoration: none;
     text-align: center;
     flex: 1;
+}
+
+.LoginPage .LoginForm .NavHolder .Active {
+    background-color: var(--highlight-color);
 }
