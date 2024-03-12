@@ -14,14 +14,61 @@
     --text-color: #fff;
     --text-color-dark: #646464;
 
+    --input-border-color: #e4e4e4;
+    --input-background-color: #303D4A;
+
     /** Sizes */
     --font-size: 1rem;
+
+    --component-distance: .7rem;
+    --component-distance-large: 1.3rem;
+    --component-distance-top-trim: 
+        0 
+        var(--component-distance)
+        var(--component-distance)
+        var(--component-distance);
+    --component-distance-top-trim-large: : 
+        0 
+        var(--component-distance-large)
+        var(--component-distance-large)
+        var(--component-distance-large);
+    --component-distance-height-trim-large: 
+        0 
+        var(--component-distance-large)
+        0 
+        var(--component-distance-large);
+    --component-distance-sides-trim-large: 
+        var(--component-distance-large)
+        0 
+        var(--component-distance-large)
+        0;
+
+    --component-border-radius: .7rem;
 }
 
 html,
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    padding: .8em;
+    outline: none;
+    border-radius: var(--component-border-radius);
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
 }
 
 h1,
@@ -38,15 +85,18 @@ html {
 }
 
 button {
+    width: 100%;
     outline: none;
     padding: 0.6em 2em;
     color: var(--text-color);
     font-size: var(--font-size);
     background-color: var(--highlight-color);
-    border-radius: 1em;
+    border-radius: var(--component-border-radius);
     border: 0 solid var(--highlight-color-darker);
-    border-width: 0 0 0.35em 0;
+    border-width: 0 0 0.5rem 0;
     cursor: pointer;
+    box-sizing: border-box;
+    font-size: var(--font-size);
 }
 
 a,
@@ -59,17 +109,18 @@ a:active {
 @media (prefers-color-scheme: dark) {
     :root {
         /** Colors */
-        --highlight-color: #40358c;
-        --highlight-color-darker: #1d183f;
+        --highlight-color: #ff893b;
+        --highlight-color-darker: #c46729;
 
-        --background-color: #4c4e5f;
+        --background-box-color: #465461;
+        --background-color: #262f38;
         --background-color-accent: #8387a8;
         --background-color-dark: #080b10;
+        --background-color-contrast: #181e24;
 
-        --text-color: #a6a7ac;
-        --text-color-dark: #a6a7ac;
+        --text-color: #f8f8f8;
+        --text-color-dark: #f8f8f8;
 
-        /** Sizes */
-        --font-size: 1rem;
+        --input-background-color: #303D4A;
     }
 }

@@ -1,3 +1,82 @@
-.PageContent {
+.LoginContent {
     position: relative;
+    padding: var(--component-distance-top-trim-large);
+    padding-left: var(--component-distance-large);
+    padding-right: var(--component-distance-large);
+    padding-bottom: var(--component-distance-large);
+}
+
+.LoginContent > * {
+    z-index: 1;
+    position: relative;
+}
+
+.LoginContent .Circle {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: #465461;
+    position: absolute;
+    z-index: 0;
+}
+
+.LoginContent h1 {
+    margin: var(--component-distance-sides-trim-large);
+    text-align: center;
+}
+
+.LoginContent label {
+    margin: var(--component-distance) 0;
+    display: block;
+}
+
+.LoginContent label:first-child {
+    margin-top: 0;
+}
+
+.LoginContent .Line {
+    height: 1px;
+    width: 100%;
+    margin-top: var(--component-distance-large);
+    background-color: var(--background-color-dark);
+}
+
+.LoginContent button {
+    margin-top: var(--component-distance-large);
+}
+
+.LoginContent .SocialButtonGroup {
+    margin-top: var(--component-distance);
+    display: flex;
+    justify-content: center;
+}
+
+.LoginContent .SocialButton {
+    height: 50px;
+    width: 50px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    margin-left: var(--component-distance);
+    cursor: pointer;
+}
+
+.LoginContent .SocialButton:first-child {
+    margin-left: 0;
+}
+
+.LoginContent .SocialButton.Google {
+    background-color: #de513f;
+}
+
+.LoginContent .SocialButton.Facebook {
+    background-color: #106bff;
+}
+
+.LoginContent .SocialButton i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

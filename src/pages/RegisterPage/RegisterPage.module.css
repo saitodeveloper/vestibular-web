@@ -1,3 +1,44 @@
-.PageContent {
-    position: relative;
+.RegisterContent {
+    padding: var(--component-distance-top-trim-large);
+    padding-left: var(--component-distance-large);
+    padding-right: var(--component-distance-large);
+    padding-bottom: var(--component-distance-large);
+}
+
+.RegisterContent h1 {
+    margin: var(--component-distance-sides-trim-large);
+    text-align: center;
+}
+
+.RegisterContent fieldset {
+    display: flex;
+    justify-content: left;
+    margin: var(--component-distance) 0;
+}
+
+.RegisterContent fieldset:first-child {
+    margin-top: 0;
+}
+
+.RegisterContent fieldset.FieldsetColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.RegisterContent fieldset label {
+    flex: 1;
+    align-self: center;
+    width: 100%;
+}
+
+.RegisterContent fieldset input {
+    flex: 1;
+}
+
+.RegisterContent fieldset > input:nth-child(2) {
+    margin-left: var(--component-distance);
+}
+
+.RegisterContent .ButtonGroup {
+    padding-top: var(--component-distance);
 }
