@@ -8,7 +8,7 @@ function LandingPageComponent() {
             <header>
                 <img src="/img/logo.png" />
                 <nav>
-                    <Link to="/ ">Principal</Link>
+                    <Link to="/">Principal</Link>
                     <Link to="/about">Sobre</Link>
                     <Link to="/user/register">Registrar</Link>
                     <Link to="/user/login">Logar</Link>
@@ -16,20 +16,20 @@ function LandingPageComponent() {
             </header>
             <main className={styles.LandingPageContent}>
                 <section className={styles.Headline}>
-                    <article>
-                        <div className={styles.Texts}>
-                            <h1>Transforme seu Potencial em Excelência</h1>
-                            <h2>
-                                Acompanhamento Personalizado para Alunos do
-                                Ensino Médio Rumo ao Sucesso no Vestibular!
-                            </h2>
-                            <button>Comece Já!</button>
-                            <button>Cadastrar</button>
-                        </div>
-                    </article>
-                    <div className={styles.OutdoorImg}>
-                        <img src="/img/bg.jpg" />
-                    </div>
+                    <ul>
+                        <li>Aunos</li>
+                        <li>Ensino</li>
+                        <li>Estudos</li>
+                        <li>Vestibular</li>
+                        <li>Comunidade</li>
+                    </ul>
+                    <h1>Transforme seu Potencial em Excelência</h1>
+                    <h2>
+                        Acompanhamento Personalizado para Alunos do Ensino Médio
+                        <br />
+                        Rumo ao Sucesso no Vestibular!
+                    </h2>
+                    <button>Registrar</button>
                 </section>
                 <section className={styles.Features}>
                     <img src="/img/trophy.svg" />
