@@ -30,7 +30,7 @@ const PostUserSchema = joi.object({
 });
 
 const PostAuthSchema = joi.object({
-    email: IdentitySchema.identity.email().required(),
+    email: IdentitySchema.identity.email({ tlds: { allow: false } }).required(),
     password: joi.string().min(6).max(20).required()
 });
 
