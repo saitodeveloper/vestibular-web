@@ -29,39 +29,81 @@ header nav a {
 
 .LandingPageContent .Headline {
     display: flex;
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+    overflow: hidden;
+}
+
+.LandingPageContent .Headline > * {
+    flex: 1;
+    display: flex;
     flex-direction: column;
+}
+
+.LandingPageContent .Headline .Left,
+.LandingPageContent .Headline .Right {
+    justify-content: space-between;
+    padding: 8rem 0;
+}
+
+.LandingPageContent .Headline > * svg {
+    fill: var(--logo-color);
+    height: 7rem;
+    width: 100%;
+}
+
+.LandingPageContent .Headline .Middle {
     text-align: center;
     align-items: center;
     padding-top: 5rem;
-    color: var(--text-color);
-    background: var(--background-color-dark);
     min-height: 80vh;
+    flex: 3;
 }
 
-.Headline ul {
+.LandingPageContent .Headline .Middle ul {
     margin: 2rem;
 }
 
-.Headline ul li {
+.LandingPageContent .Headline .Middle ul li {
     display: inline;
     background: green;
     padding: 0.3rem 0.7rem;
     border-radius: 6rem;
 }
 
-.Headline button {
+.LandingPageContent .Headline .Middle ul li:nth-child(1) {
+    background-color: aqua;
+}
+
+.LandingPageContent .Headline .Middle ul li:nth-child(2) {
+    background-color: gold;
+}
+
+.LandingPageContent .Headline .Middle ul li:nth-child(3) {
+    background-color: plum;
+}
+
+.LandingPageContent .Headline .Middle ul li:nth-child(4) {
+    background-color: peru;
+}
+
+.LandingPageContent .Headline .Middle .Buttons {
+    display: flex;
+}
+
+.LandingPageContent .Headline .Middle .Buttons button {
     width: unset;
     margin-top: 1.2rem;
     font-size: 1.3rem;
+    margin-left: 1.2rem;
 }
 
-.Headline ul li:not(:last-child) {
+.LandingPageContent .Headline ul li:not(:last-child) {
     margin-right: 0.6rem;
 }
 
 .LandingPageContent .Headline h1 {
     font-size: 4rem;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -72,46 +114,80 @@ header nav a {
 }
 
 .LandingPageContent .Features {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    height: 170vh;
+}
+
+.LandingPageContent .Features > * {
+    position: sticky;
+}
+
+.LandingPageContent .Features .Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    top: 0;
+}
+
+.LandingPageContent .Features .Feature {
+    background-color: black;
+    padding: 1.5rem 2.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+.LandingPageContent .Features .Feature h3 {
+    font-size: 1.8rem;
+}
+
+.LandingPageContent .Features .Feature:nth-child(2) {
+    margin-top: 5rem;
+    z-index: 3;
+    top: 240px;
+    background-color: #e5ebfe;
+    color: #4d88e8;
+}
+
+.LandingPageContent .Features .Feature:nth-child(3) {
+    z-index: 4;
+    top: 320px;
+    background-color: #fbe8e0;
+    color: #ed6c4b;
+}
+
+.LandingPageContent .Features .Feature:nth-child(4) {
+    z-index: 5;
+    top: 400px;
+    background-color: #e9ffe9;
+    color: #78b28e;
+}
+
+.LandingPageContent .Features .Feature:nth-child(5) {
+    z-index: 6;
+    top: 480px;
+    background-color: #e5ebfe;
+    color: #4d88e8;
 }
 
 .LandingPageContent .Features img {
-    height: 10em;
-    margin: 2em 0 0 0;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
 }
 
-.LandingPageContent .Features .FeatureList {
-    list-style-type: none;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+.LandingPageContent .Features .Feature {
+    max-width: 600px;
 }
 
-.LandingPageContent .Features .FeatureList .Feature {
-    max-width: 20%;
-}
-
-.LandingPageContent .Features .FeatureList .Feature article {
-    background-color: var(--background-box-color);
-    text-align: left;
-    border-radius: 2em;
-    padding: 2em;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 0.5em;
-    border: 0 solid var(--background-box-shadow-color);
-    border-width: 0 0.3em 0.3em 0;
-}
-
-.LandingPageContent .Features .FeatureList .Feature article h4 {
-    margin: 1em 0;
-    font-weight: 900;
-}
-
-.LandingPageContent .Features .FeatureList .Feature article i {
-    font-size: 4em;
+.LandingPageContent .Features .Feature h3 {
+    text-align: center;
+    margin: 0.7rem;
 }
 
 footer {

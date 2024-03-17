@@ -23,7 +23,9 @@
         "paths": {
             "@src/*": ["./src/*"],
             "@pages/*": ["./src/pages/*"],
-            "@pages": ["./src/pages/"]
+            "@pages": ["./src/pages/"],
+            "@icons/": ["./src/assets/icons/"],
+            "@icons/*": ["./src/assets/icons/*"]
         }
     },
     "include": ["src"],
